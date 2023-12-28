@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.applogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:7px;
+}
+
+.applogo p{
+    font-family: 16px;
+    font-weight: 500;
+}
+
+.paraNav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.paraNav p {
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.buttonNav {
+    color: var(--color--white);
+    height: 47px;
+    width: 172px;
+    border: 2px solid var(--color--white);
+    background-color: transparent;
+    cursor: pointer;
+}

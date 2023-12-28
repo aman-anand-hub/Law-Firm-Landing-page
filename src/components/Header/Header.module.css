@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    height:  max-content;
+    max-height: 700px;
+    background-color: var(--color--bback);
+}
+
+.contentDiv {
+    padding-top: 53px;
+    padding-left: 153px;
+    padding-bottom: 211px;
+    width: 1135px;
+}

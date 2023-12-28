@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    min-width: 1135px;
+    padding-top: 50px;
+}
+
+.paraDiv {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding-top: 100px;
+}
+
+.paraDiv h1 {
+    font-size: 56px;
+    font-weight: 500;
+    font-family: "Inter";
+}
+
+.paraDiv h2 {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Inter";
+    margin-top: 1rem;
+}
+
+.paraDiv p {
+    color: var(--color--white);
+    width: 85%;
+    margin-top: 2rem;
+    opacity: 50%;
+}
+
+.imageDiv {
+    width: 50%;
+    height: 450px;
+    margin-right: 7rem;
+    margin-top: 2rem;
+}
+
+.imageSize {
+    width: 100%;
+    height: 100%;
+}
