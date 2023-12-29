@@ -8,7 +8,7 @@ function NavigationBar() {
         <div className={styles.applogo}>
             <AppLogo />
             <p>ISSTUDIO</p>
-        </div>z
+        </div>
         <div className={styles.paraNav}>
             <p>Home</p>
             <p>Attorneys</p>

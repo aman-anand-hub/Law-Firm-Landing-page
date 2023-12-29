@@ -1,0 +1,21 @@
+.wrapper {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper h1 {
+    color: var(--color--white);
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.content {
+    max-width: 1137px;
+    max-height: 626px;
+}
+
+.header {
+    height: max-content;
+    width: 937px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnSection {
+    display: flex;
+    gap: 15px;
+    margin-top: 4rem;
+}
+
+.header p {
+    font-size: 54px;
+    font-weight: 600;
+    height: 154px;
+    width: 374px;
+}
+
+.carouselDiv {
+    
+}

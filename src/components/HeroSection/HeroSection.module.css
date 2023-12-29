@@ -43,3 +43,10 @@
     width: 100%;
     height: 100%;
 }
+
+.iconMail {
+    height: 34px;
+    width: 34px;
+    opacity: 50%;
+    color: transparent;
+}

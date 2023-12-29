@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 377px;
+    width: 359px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(76, 73, 73, 0.3);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    background-color: rgba(101, 101, 101, 0.5);
+}
+
+.iconDiv {
+    height: 121px;
+    width: 121px;
+    background-color: var(--color--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color--white);
+}

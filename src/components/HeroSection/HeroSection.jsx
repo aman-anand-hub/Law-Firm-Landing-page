@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
-import {ReactComponent as HeroImage} from "../../assets/heroimg.svg"
+import {ReactComponent as HeroImage} from "../../assets/heroimg.svg";
+import MailIcon from '@mui/icons-material/Mail';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
+import CustomButton from "../CustomButton/CustomButton.jsx";
+import {ReactComponent as MailI} from "../../assets/mailIcon.svg";
 
 function HeroSection() {
     return(
@@ -14,6 +19,38 @@ function HeroSection() {
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus libero doloremque aliquam ducimus. Soluta molestias nesciunt laboriosam ab error quos delectus ipsa fugit! Minima perferendis soluta aliquam harum reiciendis!
                 </p>
+
+                {/* <input></input> */}
+
+                <TextField
+                variant="outlined"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <MailI className={styles.iconMail} />
+                    </InputAdornment>
+                  ),
+                  endAdornment: (
+                    <InputAdornment position="end" >
+                      <CustomButton>
+                        Let's Talk
+                      </CustomButton>
+                    </InputAdornment>
+                  ),
+                  sx: {
+                        '--Input-minHeight': '74px',
+                        marginTop: '3rem',
+                        width: '70%',
+                        backgroundColor: 'var(--color--primary)',
+                        borderRadius: '43px', 
+                        '& input::placeholder': {
+                            color: 'rgba(255, 255, 255, 0.5)', 
+                            fontFamily: 'Inter', 
+                          },
+                    },
+                    }}
+                    placeholder="Enter your email address"
+                />
 
             </div>
 

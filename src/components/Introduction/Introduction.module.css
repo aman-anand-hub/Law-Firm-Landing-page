@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 153px;
+    padding-top: 200px;
+    max-width: 1135px;
+    margin-top: 1rem;
+    height: 500px;
+}
+
+.wrapper h1 {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: inherit;
+    max-width: 387px;
+}
+
+.line {
+    height: 140px;
+    width: 0px;
+    border: 1px solid var(--color--white);
+    opacity: 50%;
+    margin-top: -1rem;
+}
+
+.rightHalf {
+    width: 475px;
+    height: max-content;
+}
+
+.rightHalf h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rightHalf p {
+    color: var(--color--white);
+    opacity: 50%;
+}
