@@ -1,0 +1,9 @@
+.swiperBtn {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: #E3B748;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+}

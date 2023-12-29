@@ -1,12 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 153px;
     padding-top: 200px;
     max-width: 1135px;
     margin-top: 1rem;
     height: 500px;
+    width: 100%;
 }
 
 .wrapper h1 {

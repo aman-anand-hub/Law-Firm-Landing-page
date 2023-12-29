@@ -20,19 +20,16 @@
     justify-content: space-between;
 }
 
-.btnSection {
-    display: flex;
-    gap: 15px;
-    margin-top: 4rem;
-}
-
 .header p {
     font-size: 54px;
     font-weight: 600;
     height: 154px;
     width: 374px;
+    margin-left: 100px;
 }
 
-.carouselDiv {
-    
+.buttonDiv {
+    position: relative;
+    top: -25rem;
+    right: -60rem;
 }

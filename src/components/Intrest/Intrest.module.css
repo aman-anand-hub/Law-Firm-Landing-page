@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
 }
 
 .wrapper h1 {
@@ -17,7 +18,7 @@
 .imageGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     max-width: 940px;
     align-items: center;
 }
@@ -25,6 +26,7 @@
 .gridItem {
     text-align: center; 
     height: max-content;
+    margin-bottom: -1.5rem;
   }
 
   .gridItem p {
