@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from "./Navigationbar.module.css";
-import {ReactComponent as AppLogo} from "../../assets/Vector.svg"
+import {ReactComponent as AppLogo} from "../../assets/Vector.svg";
+import {ReactComponent as Instagram} from "../../assets/instagram.svg";
+import {ReactComponent as Facebook} from "../../assets/facebook.svg";
+import {ReactComponent as Twitter} from "../../assets/twitter.svg";
+import {ReactComponent as Pintrest} from "../../assets/pintrest.svg";
 
-function NavigationBar() {
+function NavigationBar({ footer }) {
   return (
     <div className={styles.wrapper}>
         <div className={styles.applogo}>
@@ -15,7 +19,23 @@ function NavigationBar() {
             <p>Practice Areas</p>
             <p>About Us</p>
         </div>
-        <button className={styles.buttonNav}>Contact Now</button>
+
+        {
+          footer ? 
+          (
+            <div className={styles.socialApps}>
+              <Instagram className={styles.socialIcon} />
+              <Facebook className={styles.socialIcon} />
+              <Twitter className={styles.socialIcon} />
+              <Pintrest className={styles.socialIcon} />
+            </div>
+          ) :
+          (
+            <button className={styles.buttonNav}>Contact Now</button>
+          )
+        }
+        
+
     </div>
   )
 }

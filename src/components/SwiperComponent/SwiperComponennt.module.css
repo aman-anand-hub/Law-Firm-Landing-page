@@ -3,21 +3,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     width: 100%;
 }
 
 .content {
     max-width: 1137px;
-    max-height: 626px;
+    max-height: 826px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carouselBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0.5rem;
+    right: 0rem;
+}
+
+.carouselBtns > *:not(:last-child) {
+    margin-right: 20px;
 }
 
 .header {
-    height: max-content;
-    width: 937px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: block;
+    position: relative;
+    left: -24rem;
+    top: 6rem;
 }
 
 .header p {
@@ -26,10 +44,4 @@
     height: 154px;
     width: 374px;
     margin-left: 100px;
-}
-
-.buttonDiv {
-    position: relative;
-    top: -25rem;
-    right: -60rem;
 }

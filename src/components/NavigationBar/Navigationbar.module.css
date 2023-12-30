@@ -9,6 +9,7 @@
     flex-direction: row;
     align-items: center;
     gap:7px;
+    cursor: pointer;
 }
 
 .applogo p{
@@ -34,5 +35,19 @@
     width: 172px;
     border: 2px solid var(--color--white);
     background-color: transparent;
+    cursor: pointer;
+}
+
+.socialApps {
+    display: flex;
+    flex-direction: row;
+    width: 187px;
+    height: 30px;
+    gap: 19px
+}
+
+.socialIcon {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }

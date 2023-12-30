@@ -17,15 +17,15 @@ function SwiperComponent() {
 
     const array= 
     [
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>,
-        <ContentBox>98% success rate</ContentBox>
+        <ContentBox imgLink={emp1} ceo>Jane Cooper</ContentBox>,
+        <ContentBox imgLink={emp2} ceo>Devon Lane</ContentBox>,
+        <ContentBox imgLink={emp3} ceo>Robert Fox</ContentBox>,
+        <ContentBox imgLink={emp1} ceo>Jane Cooper</ContentBox>,
+        <ContentBox imgLink={emp2} ceo>Devon Lane</ContentBox>,
+        <ContentBox imgLink={emp3} ceo>Robert Fox</ContentBox>,
+        <ContentBox imgLink={emp1} ceo>Jane Cooper</ContentBox>,
+        <ContentBox imgLink={emp2} ceo>Devon Lane</ContentBox>,
+        <ContentBox imgLink={emp3} ceo>Robert Fox</ContentBox>,
     ];
 
     const swiper = useSwiper();
@@ -42,42 +42,36 @@ function SwiperComponent() {
   return (
     <div className={styles.wrapper}>
 
-        <div className={styles.content}>
+        <div className={styles.header}>
+            <p>What says our happy Clients</p>
+        </div>
 
-            <div className={styles.header}>
-
-                <p>What says our happy Clients</p>
-
-            </div>
-
-            <div>
+            <div className={styles.content}>
                 <Swiper
                   modules={{ Navigation }}
                   spaceBetween={40}
                   slidesPerView={3}
-                  style={{padding: "20px 30px"}}
+                  style={{padding: "140px 30px"}}
                   initialSlide={0}
                   allowTouchMove
                 >  
                     <Controls arr={array}/>
 
-                    <div className={styles.buttonDiv}>
+                    <div className={styles.carouselBtns}>
                         <LeftNavigationButton />
-                        <RightNavigationButton />
+                        <RightNavigationButton />    
                     </div>
-                    
 
-                    {array.map((item, index) => (
-                        <SwiperSlide key={index}>
-                         {item}
-                        </SwiperSlide>
-                    ))}
+                    <div className={styles.swiperSlide}>
+                        {array.map((item, index) => (
+                            <SwiperSlide key={index}>
+                            {item}
+                            </SwiperSlide>
+                        ))}
+                    </div>
 
                 </Swiper>
             </div>
-            
-        </div>
-
     </div>
   )
 }
