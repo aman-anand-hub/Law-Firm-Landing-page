@@ -14,6 +14,7 @@ function CustomAccordion( { para1, para2 }) {
             backgroundColor: 'transparent',
             width: '98%',
             border: 'none',
+            boxShadow: 'none',
           }}
       >
         <AccordionSummary

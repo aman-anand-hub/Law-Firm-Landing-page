@@ -20,8 +20,6 @@ function HeroSection() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus libero doloremque aliquam ducimus. Soluta molestias nesciunt laboriosam ab error quos delectus ipsa fugit! Minima perferendis soluta aliquam harum reiciendis!
                 </p>
 
-                {/* <input></input> */}
-
                 <TextField
                 variant="outlined"
                 InputProps={{
@@ -44,8 +42,16 @@ function HeroSection() {
                         backgroundColor: 'var(--color--primary)',
                         borderRadius: '43px', 
                         '& input::placeholder': {
-                            color: 'rgba(255, 255, 255, 0.5)', 
+                            color: '#ffffff', 
                             fontFamily: 'Inter', 
+                          },
+                          '& input': {
+                            color: '#ffffff', 
+                          },
+                          '& input:focus': {
+                            border: 'none',
+                            outline: 'none',
+                            boxShadow: 'none',
                           },
                     },
                     }}
